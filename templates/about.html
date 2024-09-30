@@ -1,10 +1,11 @@
 {% extends "base.html" %}
+
 {% block content %}
 <div class="container py-5">
     <h1 class="text-success text-center mb-4">About Nyeri Chai Farmers Association</h1>
-
+    
     <!-- Vision, Mission, and Core Values Section -->
-    <section id="vision-mission">
+    <section id="vision-mission" class="mb-5">
         <h2 class="text-success">Vision, Mission, and Core Values</h2>
         <p>The mandate of the Nyeri Chai Farmers Association (NCFA) is to lobby and advocate for the rights of tea farmers, ensuring that they are aware of and understand their rights. NCFA also aims to empower farmers to confidently speak out when these rights are violated without fear of reprisals.</p>
 
@@ -34,12 +35,19 @@
     </section>
 
     <!-- History Section -->
-    <section id="history">
+    <section id="history" class="mb-5">
         <h2 class="text-success">History and Achievements</h2>
         <p>NCFA was officially registered in September 2015 under the Societies Act. Its formation was the result of a series of meetings and consultations held by tea farmers from five tea factories in Nyeri County: Gathuthi, Ragati, Iriaini, Gitugi, and Chinga.</p>
         <p>Farmers came together because they felt their concerns and opinions were not being heard or addressed by the existing representation mechanism under the Kenya Tea Development Agency (KTDA). Despite KTDA's system of farmer representation, many farmers believed that their voices were not being effectively represented.</p>
 
         <p>In response, a small group of about thirty farmers initially formed the core of NCFA. Over time, many members dropped out due to the financial and logistical challenges, but a passionate group of about fifteen remained committed. This group shouldered the expenses of consultations, legal fees, and other associated costs out of their own pockets. Their boldness, vision, and dedication have sustained the Association to date.</p>
     </section>
+
+    <!-- Call to Action Section -->
+    <section id="call-to-action" class="text-center mt-5">
+        <h2 class="text-success">Join Us</h2>
+        <p>If you're a tea farmer in Nyeri County and want to be part of our movement, <a href="{{ url_for('register') }}" class="btn btn-success">Register Now</a> to join our community and make your voice heard!</p>
+    </section>
 </div>
 {% endblock %}
+

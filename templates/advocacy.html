@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advocacy Achievements | NCFA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #28a745;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #007bff;
+            margin-top: 20px;
+        }
+
+        .achievement {
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            background: #e9ecef;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        ul li i {
+            margin-right: 10px;
+            color: #28a745;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 10px;
+            background-color: #343a40;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        nav {
+            background-color: #343a40;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="{{ url_for('home') }}">Home</a>
+    <a href="{{ url_for('partners') }}">Partners</a>
+    <a href="{{ url_for('advocacy') }}">Advocacy</a>
+    <a href="{{ url_for('about') }}">About</a>
+    <a href="{{ url_for('login') }}">Login</a>
+</nav>
+
+<div class="container">
+    <h1>Achievements of NCFA</h1>
+    <div class="achievement">
+        <h2>Significant Reforms in the Tea Sub-Sector</h2>
+        <p>NCFA has made remarkable achievements to date. Among the reforms in the tea sub-sector in Kenya, notable changes in national policy have been credited to the lobbying efforts of NCFA. A major milestone was the repeal of the Tea Act 2020 and the Tea Regulations 2021, where NCFA played a pivotal role in championing these reforms.</p>
+
+        <p>In 2020, NCFA presented a memorandum to the Senate, which was escalated to the Head of State. Following a series of engagements, a National Tea Task Force was established. It was through this Task Force that several reforms were introduced into the tea sub-sector, including:</p>
+
+        <ul>
+            <li><i class="fas fa-check-circle"></i>Reduction of KTDA Management fees from 2% to 1.5%.</li>
+            <li><i class="fas fa-check-circle"></i>Ensuring 50% of the hammer price at tea auctions is paid directly to farmers.</li>
+            <li><i class="fas fa-check-circle"></i>Elimination of the voting-by-proxy system during elections, enforcing a one-man-one-vote system.</li>
+            <li><i class="fas fa-check-circle"></i>Strict adherence to gender regulations on Boards and inclusion of persons with disabilities (PWDs) in elections.</li>
+            <li><i class="fas fa-check-circle"></i>Reduction of tea brokerage fees from 1.5% to 1%.</li>
+            <li><i class="fas fa-check-circle"></i>Subsidizing fertilizer costs by the government to alleviate production costs for farmers, which is extended to other crops as well.</li>
+            <li><i class="fas fa-check-circle"></i>Increasing transparency in KTDA's subsidiary companies by making their accounts publicly accessible, although this is still a work in progress.</li>
+            <li><i class="fas fa-check-circle"></i>Empowering farmer representatives to participate in the hiring process for auditors and company secretaries of their factories.</li>
+        </ul>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 NCFA - Nyeri Chai Farmers Association</p>
+</footer>
+
+</body>
+</html>

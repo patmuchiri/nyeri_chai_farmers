@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Members | NCFA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #28a745;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #007bff;
+            margin-top: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #e9ecef;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 10px;
+            background-color: #343a40;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        nav {
+            background-color: #343a40;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="{{ url_for('home') }}">Home</a>
+    <a href="{{ url_for('partners') }}">Partners</a>
+    <a href="{{ url_for('advocacy') }}">Advocacy</a>
+    <a href="{{ url_for('about') }}">About</a>
+    <a href="{{ url_for('login') }}">Login</a>
+</nav>
+
+<div class="container">
+    <h1>Members Benefits</h1>
+    <ul>
+        <li><i class="fas fa-check-circle"></i>Strong bargaining power.</li>
+        <li><i class="fas fa-check-circle"></i>Avenue for lobbying and advocacy.</li>
+        <li><i class="fas fa-check-circle"></i>Training on smallholder farmers' rights, gender issues, and new farming technologies.</li>
+    </ul>
+
+    <h2>How to Join Nyeri Chai Farmers Association</h2>
+    <h3>Requirements:</h3>
+    <ul>
+        <li><i class="fas fa-check-circle"></i>Must have belonged to one of the five factories in Nyeri County.</li>
+        <li><i class="fas fa-check-circle"></i>Must have registered in the association with 100 Ksh as a membership fee, renewable yearly (subject to change).</li>
+        <li><i class="fas fa-check-circle"></i>Must have a personal Grower No in one of the tea collection centres within the five factories.</li>
+        <li><i class="fas fa-check-circle"></i>Must be ready to follow the terms and conditions in the Nyeri Chai Farmers Association Constitution.</li>
+    </ul>
+</div>
+
+<footer>
+    <p>&copy; 2024 NCFA - Nyeri Chai Farmers Association</p>
+</footer>
+
+</body>
+</html>
