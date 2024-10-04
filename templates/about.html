@@ -1,53 +1,109 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="container py-5">
-    <h1 class="text-success text-center mb-4">About Nyeri Chai Farmers Association</h1>
-    
-    <!-- Vision, Mission, and Core Values Section -->
-    <section id="vision-mission" class="mb-5">
-        <h2 class="text-success">Vision, Mission, and Core Values</h2>
-        <p>The mandate of the Nyeri Chai Farmers Association (NCFA) is to lobby and advocate for the rights of tea farmers, ensuring that they are aware of and understand their rights. NCFA also aims to empower farmers to confidently speak out when these rights are violated without fear of reprisals.</p>
+<div class="about-page">
+    <div class="container py-5">
+        <h1 class="text-success text-center mb-4">About Nyeri Chai Farmers Association</h1>
 
-        <!-- Vision Statement -->
-        <div class="mb-4">
-            <h3 class="text-success">Vision Statement</h3>
-            <p><strong>To be the recognized voice of the tea farmer in Nyeri County.</strong></p>
-        </div>
+        <!-- Vision, Mission, and Core Values Section -->
+        <section id="vision-mission" class="mb-5">
+            <h2 class="text-success">Vision, Mission, and Core Values</h2>
+            <p class="description-text">The mandate of the Nyeri Chai Farmers Association (NCFA) is to lobby and advocate for the rights of tea farmers, ensuring that they are aware of and understand their rights. NCFA also aims to empower farmers to confidently speak out when these rights are violated without fear of reprisals.</p>
 
-        <!-- Mission Statement -->
-        <div class="mb-4">
-            <h3 class="text-success">Mission Statement</h3>
-            <p><strong>To empower tea farmers in Nyeri County to know their rights and to speak out boldly.</strong></p>
-            <p>This mission is currently focused on Nyeri County as part of the strategic plan for 2024-2028. During this period, NCFA will prioritize building both farmer capacity and internal institutional strength. Once established, the Association will explore expansion to other counties, bolstered by strong partnerships and a solid foundation.</p>
-        </div>
+            <!-- Vision Statement -->
+            <div class="mb-4">
+                <h3 class="text-success">Vision Statement</h3>
+                <p class="description-text"><strong>To be the recognized voice of the tea farmer in Nyeri County.</strong></p>
+            </div>
 
-        <!-- Core Values -->
-        <div class="mb-4">
-            <h3 class="text-success">Core Values</h3>
-            <ul>
-                <li><strong>Equity and Inclusion:</strong> NCFA commits to fairness and justice, avoiding exclusion or discrimination based on gender, religion, disability, or other factors.</li>
-                <li><strong>Integrity, Honesty, and Transparency:</strong> The Association operates with strong moral principles in all transactions and interactions.</li>
-                <li><strong>Accountability:</strong> NCFA takes responsibility for managing its resources, ensuring transparency in every aspect.</li>
-                <li><strong>Commitment:</strong> The Association remains dedicated to its cause and mission, diligently serving farmers in all capacities.</li>
-            </ul>
-        </div>
-    </section>
+            <!-- Mission Statement -->
+            <div class="mb-4">
+                <h3 class="text-success">Mission Statement</h3>
+                <p class="description-text"><strong>To empower tea farmers in Nyeri County to know their rights and to speak out boldly.</strong></p>
+                <p class="description-text">This mission is currently focused on Nyeri County as part of the strategic plan for 2024-2028. During this period, NCFA will prioritize building both farmer capacity and internal institutional strength. Once established, the Association will explore expansion to other counties, bolstered by strong partnerships and a solid foundation.</p>
+            </div>
 
-    <!-- History Section -->
-    <section id="history" class="mb-5">
-        <h2 class="text-success">History and Achievements</h2>
-        <p>NCFA was officially registered in September 2015 under the Societies Act. Its formation was the result of a series of meetings and consultations held by tea farmers from five tea factories in Nyeri County: Gathuthi, Ragati, Iriaini, Gitugi, and Chinga.</p>
-        <p>Farmers came together because they felt their concerns and opinions were not being heard or addressed by the existing representation mechanism under the Kenya Tea Development Agency (KTDA). Despite KTDA's system of farmer representation, many farmers believed that their voices were not being effectively represented.</p>
+            <!-- Core Values -->
+            <div class="mb-4">
+                <h3 class="text-success">Core Values</h3>
+                <ul>
+                    <li class="description-text"><strong>Equity and Inclusion:</strong> NCFA commits to fairness and justice, avoiding exclusion or discrimination based on gender, religion, disability, or other factors.</li>
+                    <li class="description-text"><strong>Integrity, Honesty, and Transparency:</strong> The Association operates with strong moral principles in all transactions and interactions.</li>
+                    <li class="description-text"><strong>Accountability:</strong> NCFA takes responsibility for managing its resources, ensuring transparency in every aspect.</li>
+                    <li class="description-text"><strong>Commitment:</strong> The Association remains dedicated to its cause and mission, diligently serving farmers in all capacities.</li>
+                </ul>
+            </div>
+        </section>
 
-        <p>In response, a small group of about thirty farmers initially formed the core of NCFA. Over time, many members dropped out due to the financial and logistical challenges, but a passionate group of about fifteen remained committed. This group shouldered the expenses of consultations, legal fees, and other associated costs out of their own pockets. Their boldness, vision, and dedication have sustained the Association to date.</p>
-    </section>
+        <!-- History Section -->
+        <section id="history" class="mb-5">
+            <h2 class="text-success">History and Achievements</h2>
+            <p class="description-text">NCFA was officially registered in September 2015 under the Societies Act. Its formation was the result of a series of meetings and consultations held by tea farmers from five tea factories in Nyeri County: Gathuthi, Ragati, Iriaini, Gitugi, and Chinga.</p>
+            <p class="description-text">Farmers came together because they felt their concerns and opinions were not being heard or addressed by the existing representation mechanism under the Kenya Tea Development Agency (KTDA). Despite KTDA's system of farmer representation, many farmers believed that their voices were not being effectively represented.</p>
 
-    <!-- Call to Action Section -->
-    <section id="call-to-action" class="text-center mt-5">
-        <h2 class="text-success">Join Us</h2>
-        <p>If you're a tea farmer in Nyeri County and want to be part of our movement, <a href="{{ url_for('register') }}" class="btn btn-success">Register Now</a> to join our community and make your voice heard!</p>
-    </section>
+            <p class="description-text">In response, a small group of about thirty farmers initially formed the core of NCFA. Over time, many members dropped out due to the financial and logistical challenges, but a passionate group of about fifteen remained committed. This group shouldered the expenses of consultations, legal fees, and other associated costs out of their own pockets. Their boldness, vision, and dedication have sustained the Association to date.</p>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section id="call-to-action" class="text-center mt-5">
+            <h2 class="text-success">Join Us</h2>
+            <p class="description-text">If you're a tea farmer in Nyeri County and want to be part of our movement, <span class="text-black"><strong>join our community and make your voice heard!</strong></span> <a href="{{ url_for('members') }}" class="btn btn-success">Register Now</a></p>
+        </section>
+    </div>
 </div>
+
+<!-- JavaScript for animations -->
+<script>
+    window.addEventListener('scroll', function() {
+        const sections = document.querySelectorAll('section');
+        sections.forEach((section) => {
+            const rect = section.getBoundingClientRect();
+            if (rect.top < window.innerHeight && rect.bottom > 0) {
+                section.classList.add('fade-in');
+            }
+        });
+    });
+</script>
+
+<!-- CSS Styles -->
+<style>
+    .about-page {
+        background-image: url('{{ url_for('static', filename='images/aboutustea.jpg') }}');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        padding: 60px 0;
+        color: #fff;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    }
+
+    h2 {
+        font-size: 2em;
+        margin-top: 30px;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    .description-text {
+        color: black; /* Set description text color to black */
+        font-size: 1.1em;
+        line-height: 1.6;
+    }
+
+    .fade-in {
+        opacity: 1;
+        transition: opacity 0.5s ease-in;
+    }
+
+    section {
+        opacity: 0;
+    }
+</style>
 {% endblock %}
 

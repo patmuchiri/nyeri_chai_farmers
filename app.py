@@ -65,7 +65,7 @@ def home():
     return render_template('index.html', announcements=announcements)
 
 @app.route('/announcements')
-def announcements():
+def show_announcements():
     """Route to display all announcements."""
     announcements = Announcement.query.all()
     return render_template('announcements.html', announcements=announcements)
@@ -91,7 +91,7 @@ def members():
 @app.route('/contact')
 def contact():
     """Contact route to display the contact page."""
-    return render_template('contact.html')  # Ensure this template exists
+    return render_template('contact.html')
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
@@ -135,6 +135,7 @@ def register():
 
         flash('User registered successfully', 'success')
         return redirect(url_for('login'))
+    return render_template('register.html')
 
 # Create the database and tables if they don't exist
 with app.app_context():

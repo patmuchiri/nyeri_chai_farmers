@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Announcements</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #2c3e50; /* Dark Green background */
+            color: #fff; /* White text for contrast */
+            margin: 0;
+            padding: 0;
+            position: relative;
+            min-height: 100vh;
+        }
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #f39c12; /* Yellow color for headings */
+            font-size: 2.5em;
+        }
+        .announcement-card {
+            background: #e9f7ef; /* Light background for announcements */
+            border-left: 5px solid #8e44ad; /* Brown accent for left border */
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 6px;
+            transition: box-shadow 0.3s ease;
+        }
+        .announcement-card:hover {
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .announcement-title {
+            font-size: 1.8em;
+            color: #27ae60; /* Dark Green for titles */
+        }
+        .announcement-date {
+            color: #888;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+        .announcement-text {
+            font-size: 1.1em;
+            line-height: 1.6em;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #8e44ad; /* Brown background for buttons */
+            color: #fff;
+            padding: 10px 20px;
+            margin: 10px 0;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #732d91; /* Darker shade for hover effect */
+        }
+        /* JavaScript-enhanced feature: Show more details */
+        .details {
+            display: none;
+            color: #555;
+        }
+        .show-more-btn {
+            cursor: pointer;
+            color: #f39c12; /* Yellow for show more button */
+            font-weight: bold;
+        }
+        /* Home button at bottom-right */
+        .home-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #27ae60; /* Dark Green for home button */
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.2em;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        .home-btn:hover {
+            background-color: #1f8241; /* Darker green on hover */
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Latest Announcements</h1>
+
+        <div class="announcement-card">
+            <div class="announcement-title">Strategic Plan Launch</div>
+            <div class="announcement-date">October 1, 2024</div>
+            <div class="announcement-text">
+                We have recently launched our strategic plan with a handbook detailing the key aspects of the plan.
+                <span class="show-more-btn" onclick="toggleDetails(this)">Show more</span>
+            </div>
+            <div class="details">
+                The handbook includes sections on our vision for growth, sustainability goals, and the roles that
+                members will play in ensuring the plan's success. You can <a href="#" class="btn">Download Handbook</a>.
+            </div>
+        </div>
+    </div>
+
+    <!-- Home Button -->
+    <a href="{{ url_for('home') }}" class="home-btn">Home</a>
+
+    <script>
+        function toggleDetails(element) {
+            const details = element.nextElementSibling;
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+                element.textContent = "Show less";
+            } else {
+                details.style.display = "none";
+                element.textContent = "Show more";
+            }
+        }
+    </script>
+</body>
+</html>
+

@@ -6,7 +6,7 @@
         <!-- Sidebar navigation -->
         <div class="col-md-2 bg-success sidebar">
             <a href="{{ url_for('home') }}">
-                <img src="{{ url_for('static', filename='images/nclogo.jpg') }}" alt="NCFA Logo" class="logo">
+                <img src="{{ url_for('static', filename='images/nclogo.png') }}" alt="NCFA Logo" class="logo">
             </a>
             <nav class="nav flex-column mt-4">
                 <a class="nav-link active" href="{{ url_for('home') }}">Home</a>
@@ -14,7 +14,7 @@
                 <a class="nav-link" href="{{ url_for('partners') }}">Partners</a>
                 <a class="nav-link" href="{{ url_for('advocacy') }}">Advocacy Initiatives</a>
                 <a class="nav-link" href="{{ url_for('members') }}">Members</a>
-                <a class="nav-link" href="{{ url_for('announcements') }}">Announcements</a>
+                <a class="nav-link" href="{{ url_for('show_announcements') }}">Announcements</a>
                 <a class="nav-link" href="{{ url_for('contact') }}">Contact Us</a>
             </nav>
         </div>
@@ -29,17 +29,29 @@
 
             <div class="container">
                 <div class="row mt-5">
-                    <div class="col-md-4">
-                        <h3>Advocacy</h3>
-                        <p>NCFA works tirelessly to advocate for tea farmers' rights and interests in Nyeri County.</p>
+                    <div class="col-md-4 text-center">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <h3 class="card-title text-success">Advocacy</h3>
+                                <p class="card-text text-dark">NCFA works tirelessly to advocate for tea farmers' rights and interests in Nyeri County.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-4">
-                        <h3>Partnerships</h3>
-                        <p>We build strong partnerships to support our mission and enhance farmers' voices.</p>
+                    <div class="col-md-4 text-center">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <h3 class="card-title text-success">Partnerships</h3>
+                                <p class="card-text text-dark">We build strong partnerships to support our mission and enhance farmers' voices.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-4">
-                        <h3>Membership</h3>
-                        <p>Join NCFA to be a part of a community that stands for fairness and equity for tea farmers.</p>
+                    <div class="col-md-4 text-center">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <h3 class="card-title text-success">Membership</h3>
+                                <p class="card-text text-dark">Join NCFA to be a part of a community that stands for fairness and equity for tea farmers.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -47,3 +59,56 @@
     </div>
 </div>
 {% endblock %}
+
+<!-- CSS Styles -->
+<style>
+    body {
+        background: url('{{ url_for('static', filename='images/teakenya.jpg') }}') no-repeat center center fixed;
+        background-size: cover;
+        color: #fff;
+        height: 100vh; /* Ensures body takes the full height of the viewport */
+        margin: 0; /* Removes default margin */
+    }
+
+    .sidebar {
+        height: 100vh;
+        position: fixed;
+        overflow-y: auto; /* Allows scrolling if content overflows */
+    }
+
+    .logo {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .nav-link {
+        color: white;
+        font-weight: bold;
+    }
+
+    .nav-link:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .main-content {
+        margin-left: 16.6667%; /* Adjusts for the sidebar width */
+    }
+
+    .jumbotron {
+        background: rgba(39, 174, 96, 0.8);
+        padding: 50px;
+        border-radius: 10px;
+    }
+
+    .card {
+        margin: 10px 0;
+        border-radius: 10px;
+        transition: transform 0.2s;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+</style>
+
